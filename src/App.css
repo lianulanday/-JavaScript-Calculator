@@ -1,0 +1,54 @@
+#btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 buttons per row with equal width */
+    gap: 10px;
+    max-width: 240px; /* Slightly larger to match the display width */
+    margin: 20px auto; /* Center the button grid and add vertical spacing */
+  }
+  
+  button {
+    padding: 15px; /* Adjusted padding for a more compact look */
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #d1d1d1;
+  }
+  
+  .numbtn {
+    background-color: #e0e0e0;
+  }
+  
+  #btn0 {
+    grid-column: span 2; /* '0' button spans two columns */
+  }
+  
+  button:active {
+    background-color: #bcbcbc;
+  }
+  
+  #display {
+    max-width: 240px; /* Match width with buttons container */
+    height: 60px;
+    margin: 20px auto; /* Center the display and match spacing with buttons */
+    background-color: #333;
+    color: #fff;
+    font-size: 32px;
+    text-align: right; /* Align text to the right like calculator displays */
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2); /* Inner shadow effect */
+  }
+  
+  #display p {
+    margin: 0;
+    line-height: 60px; /* Center text vertically inside the display */
+  }
+  
